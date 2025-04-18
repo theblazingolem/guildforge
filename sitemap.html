@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Guild Forge</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sitemap-container {
+            padding: 0 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .sitemap-section {
+            margin-bottom: 30px;
+        }
+
+        .sitemap-section h2 {
+            color: var(--accent);
+            font-size: clamp(24px, 3vw, 32px);
+            margin-bottom: 15px;
+        }
+
+        .sitemap-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .sitemap-list li {
+            margin-bottom: 10px;
+        }
+
+        .sitemap-list a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: clamp(16px, 2vw, 20px);
+            transition: opacity 0.2s ease;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .sitemap-list a:hover {
+            opacity: 0.8;
+        }
+
+        .sitemap-list a::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .sitemap-subsection {
+            margin-top: 15px;
+        }
+
+        .sitemap-subsection h3 {
+            color: var(--secondary);
+            font-size: clamp(18px, 2vw, 24px);
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .sitemap-subsection .sitemap-list {
+            padding-left: 40px;
+        }
+    </style>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description"
+        content="Find your way around the Guild Forge website with our sitemap. Easy navigation to all our services and pages.">
+    <meta name="author" content="Guild Forge">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://guildforge.site/sitemap.html">
+    <meta property="og:title" content="Sitemap - Guild Forge">
+    <meta property="og:description"
+        content="Find your way around the Guild Forge website with our sitemap. Easy navigation to all our services and pages.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://guildforge.site/sitemap.html">
+    <meta property="twitter:title" content="Sitemap - Guild Forge">
+    <meta property="twitter:description"
+        content="Find your way around the Guild Forge website with our sitemap. Easy navigation to all our services and pages.">
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <h1><a href="#" id="logo-link">GUiLDFORGE</a></h1>
+        </div>
+        <div>
+            <nav>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="desktop-nav">
+                    <li><a href="index.html#services">SERViCES</a></li>
+                    <li><a href="index.html#pricing">PRiCiNG</a></li>
+                    <li><a href="index.html#clients">CLiENtS</a></li>
+                    <li><a class='cta modal-open' href="#contact">CONtACt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Square Cutout for mobile menu -->
+    <div class="square-cutout" id="mobile-menu">
+        <ul>
+            <li><a href="index.html#services">SERViCES</a></li>
+            <li><a href="index.html#pricing">PRiCiNG</a></li>
+            <li><a href="index.html#clients">CLiENtS</a></li>
+            <li><a class='cta modal-open' href="#contact">CONtACt</a></li>
+        </ul>
+    </div>
+
+    <div class="hero-container">
+        <div class="hero">
+            <h1>Site<span class="accent">Map</span></h1>
+            <h3>Find your way around our website</h3>
+        </div>
+    </div>
+
+    <div class="sitemap-container">
+        <div class="sitemap-section">
+            <h2>Main Pages</h2>
+            <ul class="sitemap-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#clients">Clients</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Services</h2>
+            <ul class="sitemap-list">
+                <li><a href="index.html#services">Designing</a></li>
+                <li><a href="index.html#services">Building</a></li>
+                <li><a href="index.html#services">Managing</a></li>
+                <li><a href="index.html#services">Consulting</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Pricing Plans</h2>
+            <ul class="sitemap-list">
+                <li><a href="index.html#pricing">Starter ($30)</a></li>
+                <li><a href="index.html#pricing">Standard ($50)</a></li>
+                <li><a href="index.html#pricing">Custom Plan ($80+)</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Contact Us</h2>
+            <ul class="sitemap-list">
+                <li><a href="#" class="modal-open">Contact Form</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Legal</h2>
+            <ul class="sitemap-list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3 class="title-text">What are you waiting for?</h3>
+        <p class="blurb">Build your community on a strong foundation</p>
+        <button class="modal-open">Get Started</button>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div class="contact-modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="contact-form" action="https://formspree.io/f/mdkozyzb" method="POST">
+                <h2>Contact Us</h2>
+                <input type="hidden" name="time" id="time-field" value="">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+                <div class="modal-gradient"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

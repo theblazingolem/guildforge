@@ -1,0 +1,12 @@
+# robots.txt for Guild Forge
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://guildforge.site/sitemap.xml
+
+# Allow all bots to access all content
+Disallow:
+
+# Wait time between crawls (optional - for high-traffic sites)
+# Crawl-delay: 10 
